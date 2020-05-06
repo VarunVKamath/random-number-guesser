@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+
+<link rel="stylesheet" type="text/css" href="{% static "css/RandomNumApp/disp.css" %}" >
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<head>
+	<title>Guess The Number!</title>
+</head>
+<body style="background-color:powderblue;">
+	<div class="greentext">
+	{% for message in messages %}   <!--display the succesfull message-->
+	<h3 align="center">
+		{{message}}
+	</h3>
+	{% endfor%}
+</div>
+<div class="divclass">
+<a style="background-color:Tomato;" class="btn btn-primary btn-lg" href="/gamepage" role="button">Play Again</a>
+<a style="background-color:Tomato;" class="btn btn-primary btn-lg" href="/" role="button">Exit</a>
+</div>
+</body>
+</html>

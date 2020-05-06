@@ -1,0 +1,48 @@
+
+h1{
+	color: red;
+	font-size: 40px
+}
+
+h2{
+	color: green;
+	font-size: 30px;
+}
+.divclass{
+	text-align: center;
+
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 75vh;
+}
+
+.container .jumbotron
+{
+	background-color: powderblue;
+}
+.redtext{
+	color:red;
+}
+
+.greentext{
+	color: green;
+}
+.bluetext{
+	color: blue;
+}
+.form-submit-button{
+	background:tomato;
+	border-style: outset;
+	color: white;
+	border-color: tomato;
+	height: 50px;
+	width: 100px;
+
+	font:bold 15px arial sans-serif;
+	text-shadow: none;
+}
+
